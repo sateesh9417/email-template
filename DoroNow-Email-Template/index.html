@@ -1,12 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>DoroNow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        #outlook a {
-            padding: 0;
-        }
-
         body {
             width: 100% !important;
             color: #000000;
@@ -14,276 +12,182 @@
             -ms-text-size-adjust: 100%;
             margin: 0;
             padding: 0;
-            font-family:Arial, Helvetica, sans-serif !important;
+            font-family: Arial, Helvetica, sans-serif !important;
+            background-color: #E9ECEF;
         }
 
-        table {
-            border: none;
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
         }
 
         a,
         a:link,
         a:visited {
             text-decoration: none;
-            color: #000000
+            color: #000000;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        h2,
-        h2 a,
-        h2 a:visited,
-        h3,
-        h3 a,
-        h3 a:visited,
-        h4,
-        h5,
-        h6,
-        .t_cht {
-            color: #000000;
+        .exited {
+            margin: 30px;
+            color: #1b1b1b;
+            font-size: 28px;
+            font-weight: 100;
+            line-height: 42px;
         }
 
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td {
-            line-height: 100%
-        }
-
-        .ExternalClass {
-            width: 100%;
-        }
-
-        button{
+        button {
             cursor: pointer;
         }
 
         img {
-            outline: none;
-            text-decoration: none;
-            -ms-interpolation-mode: bicubic;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btns button {
+            margin: 30px 10px;
+            width: 200px;
+            height: 42px;
+            border-radius: 4px;
+            background: #fff;
+            color: #1356B4;
+            font-size: 18px;
+            border: 2px solid #1356B4;
+        }
+
+        .logo {
+            margin-top: 30px;
+        }
+
+        .section-2 {
+            text-align: center;
+            margin: 30px 0;
+            border-top: 15px solid #e9ecef;
+            padding-inline: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                border-radius: 0;
+            }
+
+            .btns button{
+                width: 260px;
+            }
+
+            .exited {
+                margin-inline: 0;
+            }
+
+            .btns button:last-child,
+            .logo {
+                margin-top: 0;
+            }
+
+            .section-2 {
+                text-align: center;
+                margin-bottom: 0;
+                padding-inline: 0;
+            }
         }
     </style>
-
-    <!--[if mso]>
-<style> body,table tr,table td,a, span,table.MsoNormalTable {  font-family:Arial, Helvetica, sans-serif !important;  }</style>
-<!--<![endif]-->
-
 </head>
 
-<body bgcolor="#E9ECEF" style="margin: 0; padding: 0; min-width: 100%!important">
-    <table width="100%" bgcolor="#E9ECEF" border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-            <tr>
-                <td align="center" valign="top">
-                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff"
-                        style="width:800px; margin-top: 30px; border-radius: 8px;">
-                        <tbody>
-                            <tr>
-                                <td align="center" valign="top" bgcolor="" style="width:800px;">
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                            <tr>
-                                                <td valign="top" width="800" align="center">
-                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td align="center" valign="top"><a
-                                                                        href="https://doronow.com/" 
-                                                                        target="_blank"
-                                                                        style="text-decoration:none;"><img
-                                                                        src="assets/DoroNow-Logo.png"
-                                                                        width="200"
-                                                                        height="" style="display:block; padding: 25px;"
-                                                                        border="0"></a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <hr style="margin-top: 0;margin-bottom: 0;" width="90%" color="#E9ECEF"/>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <h4 style="margin:25px; width:75%; color: #71767A; font-size:28px; font-weight:100;
-                                                                    line-height: 42px;">
-                                                                    Hi <span style="color: #1b1b1b; font-weight:600;">John Doe</span>,<br/>
-                                                                    you have successfully registered<br/>
-                                                                    with DoroNow</h4>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center" valign="top">
-                                                                    <img
-                                                                        src="assets/Success.png"
-                                                                        width="70"
-                                                                        height="" style="display:block"
-                                                                        border="0">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <p style="margin:25px; width:75%; color: #71767A; font-size:20px; font-weight:100; line-height: 30px;">
-                                                                    Your DoroNow account has been created, you can now login
-                                                                    to the account and make gift card purchases
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                   <button style="margin:20px 0px;width: 260px; height: 42px; border-radius: 4px; 
-                                                                   background: #1356B4; color: #fff; font-size:18px; border:none">login</button>
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <p style="margin:25px; width:80%; color: #71767A; font-size:16px; font-weight:100; line-height: 26px;">
-                                                                        Use the following link if the above button is not working
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <p style="width:80%;; font-size:16px; font-weight:100;">
-                                                                        <a target="_blank" style=" color: #1b1b1b;" href="https://doronow.com/">https://www.doronow.com/login</a>
-                                                                        <!--<a>
-                                                                            <img src="assets/copy.png" width="20">
-                                                                        </a>-->
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <p style="margin:40px; width:80%; color: #1b1b1b; font-size:16px; font-weight:100; line-height: 26px;">
-                                                                        If this was not requested by you, please report to <a href="mailto:feedback@doronow.com">feedback@doronow.com</a>
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="https://doronow.com/" target="_blank"
+                style="text-decoration:none; display: block; text-align: center;"><img src="assets/DoroNow-Logo.png"
+                    width="200" style="padding: 25px; border: 0;"></a>
+        </div>
+        <hr style="margin-top: 0; margin-bottom: 0; width: 90%; color: #E9ECEF;">
+        <div
+            style="text-align: center; margin: 25px; color: #1B1B1B; font-size: 28px; font-weight: 100; line-height: 42px;">
+            Hi <span style="color: #1b1b1b; font-weight: 600;">John Doe</span>,<br> you have successfully registered<br>
+            with
+            DoroNow
+        </div>
+        <div style="text-align: center;">
+            <img src="assets/Success.png" width="70" style="display: block;" border="0">
+        </div>
+        <div
+            style="text-align: center; margin: 25px; color: #1B1B1B; font-size: 20px; font-weight: 100; line-height: 30px;">
+            Your DoroNow account has been created, you can now login to the account and make gift card purchases
+        </div>
+        <div style="text-align: center;">
+            <button
+                style="margin: 20px 0px; width: 260px; height: 42px; border-radius: 4px; background: #1356B4; color: #fff; font-size: 18px; border: none;">login</button>
+        </div>
+        <div
+            style="text-align: center; margin: 25px; color: #1B1B1B; font-size: 16px; font-weight: 100; line-height: 26px;">
+            Use the following link if the above button is not working
+        </div>
+        <div style="text-align: center; font-size: 16px; font-weight: 100;">
+            <a target="_blank" style="color: #1b1b1b;" href="https://doronow.com/">https://www.doronow.com/login</a>
+        </div>
+        <div
+            style="text-align: center; margin: 40px; color: #1b1b1b; font-size: 16px; font-weight: 100; line-height: 26px;">
+            If this was not requested by you, please report to <a
+                href="mailto:feedback@doronow.com">feedback@doronow.com</a>
+        </div>
 
-<!--Second-->
-    <table width="100%" bgcolor="#E9ECEF" border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-            <tr>
-                <td align="center" valign="top">
-                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff"
-                        style="width:800px; margin: 30px 0px; border-radius: 8px;">
-                        <tbody>
-                            <tr>
-                                <td align="center" valign="top" bgcolor="" style="width:800px;">
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                            <tr>
-                                                <td valign="top" width="800" align="center">
-                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <h4 style="margin:30px; width:75%; color: #1b1b1b; font-size:28px; font-weight:100;
-                                                                        line-height: 42px;">
-                                                                    Excited to know more!</h4>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <p style="width:75%; color: #71767A; font-size:20px; font-weight:100; line-height: 30px;">
-                                                                    Go through our FAQs and demo videos pages for more information
-                                                                    on Gift Cards also check our partner and reseller programs.
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <button
-                                                                        style="margin:30px 10px;width: 200px; height: 42px; border-radius: 4px;
-                                                                        background:#fff; color:#1356B4; font-size:18px; border:2px solid #1356B4">FAQs</button>
-                                                                    <button
-                                                                        style="margin:30px 10px;width: 200px; height: 42px; border-radius: 4px;
-                                                                        background:#fff; color:#1356B4; font-size:18px; border:2px solid #1356B4">Demo Videos</button>
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <hr width="90%" color="#E9ECEF" />
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center" valign="top">
-                                                                    <a target="_blank" href="https://www.facebook.com/doronowofficial" style="text-decoration:none; padding: 5px;"><img style="margin:25px 0px;" src="assets/facebook.png" width="25" height=""
-                                                                    border="0">
-                                                                    </a>
-                                                                    <a target="_blank" href="https://twitter.com/doronowofficial" style="text-decoration:none; padding: 5px;"><img style="margin:25px 0px;" src="assets/twitter.png" width="25" height=""
-                                                                    border="0">
-                                                                    </a>
-                                                                    <a target="_blank" href="https://www.linkedin.com/showcase/doronow" style="text-decoration:none; padding: 5px;"><img style="margin:25px 0px;" src="assets/linkedin.png" width="25" height=""
-                                                                    border="0">
-                                                                    <a target="_blank" href="https://www.pinterest.com/doronowofficial/" style="text-decoration:none; padding: 5px;"><img style="margin:25px 0px;" src="assets/pinterest.png" width="25" height="" border="0">
-                                                                    </a>
-                                                                    <a target="_blank" href="https://www.instagram.com/doronowofficial/" style="text-decoration:none; padding: 5px;"><img style="margin:25px 0px;" src="assets/instagram.png" width="25" height=""
-                                                                    border="0">
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <p style="width:80%; color: #71767A; font-size:14px; font-weight:100;">
-                                                                        Copyright &copy; 2023 <a href="https://www.doronow.com">DoroNow.com</a>
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <p style="margin: 20px; width:80%; color: #71767A; font-size:14px; font-weight:100;">
-                                                                        Your one stop digital gift cards solution
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="padding-bottom: 2rem;" align="center" valign="top">
-                                                                    <a target="_blank" href="" style="margin:25px 0px; padding: 5px; font-size: 14px; color: #1356B4;">
-                                                                        Purchase
-                                                                    </a>
-                                                                    <a target="_blank" href="" style="margin:25px 0px; padding: 5px; font-size: 14px; color: #1356B4;">
-                                                                        Partner Program
-                                                                    </a>
-                                                                    <a target="_blank" href="" style="margin:25px 0px; padding: 5px; font-size: 14px; color: #1356B4;">
-                                                                        Affiliate Program
-                                                                    </a>
-                                                                    <a target="_blank" href="" style="margin:25px 0px; padding: 5px; font-size: 14px; color: #1356B4;">
-                                                                        Unsubscribe
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- Second section -->
+        <div class="section-2">
+            <div class="exited">
+                Excited to know more!
+            </div>
+            <div style="color: #1B1B1B; font-size: 20px; font-weight: 100; line-height: 30px;">
+                Go through our FAQs and demo videos pages for more information on Gift Cards also check our partner and
+                reseller programs.
+            </div>
+            <div class="btns">
+                <button>FAQs</button>
+                <button>Demo Videos</button>
+            </div>
+            <hr style="width: 90%; color: #E9ECEF;">
+            <div style="margin-top: 25px;display: inline-flex;">
+                <a target="_blank" href="https://www.facebook.com/doronowofficial"
+                    style="text-decoration:none; padding: 5px;"><img src="assets/facebook.png" width="25"
+                        border="0"></a>
+                <a target="_blank" href="https://twitter.com/doronowofficial"
+                    style="text-decoration:none; padding: 5px;"><img src="assets/twitter.png" width="25" border="0"></a>
+                <a target="_blank" href="https://www.linkedin.com/showcase/doronow"
+                    style="text-decoration:none; padding: 5px;"><img src="assets/linkedin.png" width="25"
+                        border="0"></a>
+                <a target="_blank" href="https://www.pinterest.com/doronowofficial/"
+                    style="text-decoration:none; padding: 5px;"><img src="assets/pinterest.png" width="25"
+                        border="0"></a>
+                <a target="_blank" href="https://www.instagram.com/doronowofficial/"
+                    style="text-decoration:none; padding: 5px;"><img src="assets/instagram.png" width="25"
+                        border="0"></a>
+            </div>
+            <div style="color: #1B1B1B; font-size: 14px; font-weight: 100;">
+                <p>Copyright &copy; 2023 <a href="https://www.doronow.com">DoroNow.com</a></p>
+            </div>
+            <div style="margin: 20px; color: #1B1B1B; font-size: 14px; font-weight: 100;">
+                Your one stop digital gift cards solution
+            </div>
+            <div style="padding-bottom: 2rem;">
+                <a target="_blank" href=""
+                    style="margin: 25px 0px; padding: 5px; font-size: 14px; color: #1356B4;">Partner Program</a>
+                <a target="_blank" href=""
+                    style="margin: 25px 0px; padding: 5px; font-size: 14px; color: #1356B4;">Affiliate Program</a>
+                <a target="_blank" href=""
+                    style="margin: 25px 0px; padding: 5px; font-size: 14px; color: #1356B4;">Unsubscribe</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
